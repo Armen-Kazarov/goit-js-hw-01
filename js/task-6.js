@@ -1,13 +1,14 @@
 'use strict';
 
-let input = prompt('Please, enter some number');
 let total = 0;
+let input;
 
-for(let i = 0; i+=1;) {
-  total += Number(input);
+do {
   input = prompt('Please, enter some number');
+  total += Number(input);
 
-  if(input === null) {
-    alert(`Общая сумма чисел равна ${total}`); break;
-  }
+} while (Number(input));
+
+if(input === null) {
+  alert(`Общая сумма чисел равна ${total}`);
 }

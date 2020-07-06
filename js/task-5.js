@@ -1,9 +1,6 @@
 'use strict';
 
 let message = prompt('Введите страну, в которую необходимо осуществить доставку');
-let lower = message.toLowerCase();
-let firstLetter = lower.slice(0, 1);
-let countryName = lower.replace(firstLetter, firstLetter.toUpperCase());
 let cost;
 
 switch(message.toLowerCase()) {
@@ -31,4 +28,4 @@ switch(message.toLowerCase()) {
     alert('В вашей стране доставка не доступна');
 
 }
-console.log(`Доставка в ${countryName} будет стоить ${cost} кредитов`);
+console.log(`Доставка в ${message.toLowerCase()} будет стоить ${cost} кредитов`);

@@ -8,14 +8,11 @@ if (passwordRequest === null) {
   message = 'Отменено пользователем!';
   alert(message);
 
-} else {
-
-  if (passwordRequest === ADMIN_PASSWORD) {
+} else if (passwordRequest === ADMIN_PASSWORD) {
     message = 'Добро пожаловать!';
     alert(message);
 
   } else {
     message = 'Доступ запрещен, неверный пароль!';
     alert(message);
-  }
 }
